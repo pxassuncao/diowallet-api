@@ -8,7 +8,7 @@ import { AuthUser } from "../schemas/validation/AuthUser.js";
 const authRouter = Router();
 
 authRouter.post(
-  "/signup",
+  "/cadastro",
   validationSchemaMiddleware(CreateUser),
   authController.signup
 );
